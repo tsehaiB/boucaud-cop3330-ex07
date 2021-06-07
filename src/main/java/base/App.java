@@ -1,10 +1,14 @@
+/*
+ *  UCF COP3330 Summer 2021 Assignment 1 Solution
+ *  Copyright 2021 Tsehai Boucaud
+ */
 package base;
 import java.util.Scanner;
 
 public class App {
     Scanner inp = new Scanner(System.in);
     final static double feetToMeters = 0.09290304;
-    public static void main(String args[]){
+    public static void main(String[] args){
         App myApp = new App();
 
         int length = myApp.readIn("length");
@@ -20,10 +24,10 @@ public class App {
         System.out.print("What is the " + word + " of the room in feet? ");
         return Integer.parseInt(inp.nextLine());
     }
-    private int calcArea(int x, int y){
-        return x * y;
+    private int calcArea(int l, int w){
+        return l * w;
     }
-    private double convert(int z){
-        return z * feetToMeters;
+    private double convert(int a){
+        return a * feetToMeters;
     }
 }
